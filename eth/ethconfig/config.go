@@ -58,16 +58,20 @@ var LightClientGPO = gasprice.Config{
 // Defaults contains default settings for use on the Ethereum main net.
 var Defaults = Config{
 	SyncMode: downloader.SnapSync,
-	Ethash: ethash.Config{
-		CacheDir:         "ethash",
-		CachesInMem:      2,
-		CachesOnDisk:     3,
-		CachesLockMmap:   false,
-		DatasetsInMem:    1,
-		DatasetsOnDisk:   2,
-		DatasetsLockMmap: false,
-	},
-	NetworkId:               1,
+	// Ethash: ethash.Config{
+	// 	CacheDir:         "ethash",
+	// 	CachesInMem:      2,
+	// 	CachesOnDisk:     3,
+	// 	CachesLockMmap:   false,
+	// 	DatasetsInMem:    1,
+	// 	DatasetsOnDisk:   2,
+	// 	DatasetsLockMmap: false,
+	// },
+	Clique: &CliqueConfig{
+		Period: 15,
+		Epoch:  30000,
+	}
+	NetworkId:               5,
 	TxLookupLimit:           2350000,
 	LightPeers:              100,
 	UltraLightFraction:      75,
