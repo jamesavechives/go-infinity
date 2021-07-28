@@ -355,8 +355,8 @@ func GenesisBlockForTesting(db ethdb.Database, addr common.Address, balance *big
 func DefaultGenesisBlock() *Genesis {
 	return &Genesis{
 		Config:     params.MainnetChainConfig,
-		Timestamp:  1492009146,
-		Nonce:      66,
+		Timestamp:  1625276050,
+		Nonce:      0,
 		ExtraData:  hexutil.MustDecode("0x000000000000000000000000000000000000000000000000000000000000000000ac220f8c2aebb70b7844fb5cd4b0d13b14d2287ea05a75a46ed507171ce75e4b22be0655e15fa6eca06e789d57c884495c8232b0e59d43c97d32350000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"),
 		GasLimit:   4700000,
 		Difficulty: big.NewInt(1),
@@ -369,7 +369,7 @@ func DefaultGenesisBlock() *Genesis {
 func DefaultRopstenGenesisBlock() *Genesis {
 	return &Genesis{
 		Config:     params.RopstenChainConfig,
-		Nonce:      66,
+		Nonce:      0,
 		ExtraData:  hexutil.MustDecode("0x3535353535353535353535353535353535353535353535353535353535353535"),
 		GasLimit:   16777216,
 		Difficulty: big.NewInt(1048576),

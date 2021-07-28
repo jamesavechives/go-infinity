@@ -65,10 +65,10 @@ var (
 		ByzantiumBlock:      big.NewInt(0),
 		ConstantinopleBlock: big.NewInt(0),
 		PetersburgBlock:     big.NewInt(0),
-		IstanbulBlock:       big.NewInt(1_561_651),
+		IstanbulBlock:       big.NewInt(0),
 		MuirGlacierBlock:    nil,
-		BerlinBlock:         big.NewInt(4_460_644),
-		LondonBlock:         big.NewInt(5_062_605),
+		BerlinBlock:         big.NewInt(0),
+		LondonBlock:         big.NewInt(0),
 		Clique: &CliqueConfig{
 			Period: 15,
 			Epoch:  30000,

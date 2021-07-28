@@ -67,10 +67,6 @@ var Defaults = Config{
 	// 	DatasetsOnDisk:   2,
 	// 	DatasetsLockMmap: false,
 	// },
-	Clique: &CliqueConfig{
-		Period: 15,
-		Epoch:  30000,
-	}
 	NetworkId:               5,
 	TxLookupLimit:           2350000,
 	LightPeers:              100,
